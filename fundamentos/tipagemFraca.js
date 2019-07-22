@@ -7,3 +7,4 @@ console.log(typeof qualquer)
 qualquer = 398
 console.log(qualquer)
 console.log(typeof qualquer)
+ 
