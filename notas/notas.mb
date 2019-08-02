@@ -4,3 +4,4 @@
 -O hoisting automaticamente inicia a variavel, antes das demais linhas de código. 
 -O mesmo não ocorre usando LET, somente com VAR.
 
+-Não usar ';' nas estruturas de controle. Exemplo if2.js e 'else;' no ifElse.js
