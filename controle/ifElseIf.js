@@ -12,4 +12,4 @@ function imprimirResultado(nota) {
         console.log('Valor inválido')
     }
 }
-imprimirResultado(110)
+imprimirResultado(10)
