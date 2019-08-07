@@ -20,4 +20,4 @@ function imprimeResultado(nota) {
 imprimeResultado(10)
 imprimeResultado(7)
 imprimeResultado(3)
-imprimeResultado('c')
+imprimeResultado('c') 
