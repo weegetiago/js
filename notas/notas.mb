@@ -5,3 +5,7 @@
 -O mesmo não ocorre usando LET, somente com VAR.
 
 -Não usar ';' nas estruturas de controle. Exemplo if2.js e 'else;' no ifElse.js
+
+# LER SOBRE:
+- Arrouw function
+- Bind
