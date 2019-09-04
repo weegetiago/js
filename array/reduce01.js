@@ -1,4 +1,4 @@
-//REDUCE: Transforma um array em um único elemento.
+//REDUCE: Transforma um array em um único elemento. É um recurso de agregação.
 const alunos = [
     { nome: 'Weege', nota: 7.3, bolsista: true },
     { nome: 'Clemente', nota: 9.2, bolsista: true },
