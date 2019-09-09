@@ -11,3 +11,6 @@
 # LER SOBRE:
 - Arrouw function
 - Bind
+
+# Http-server
+- C:\Users\tiago.weege\Documents\js\html> http-server . -c-1
