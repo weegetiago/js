@@ -1,0 +1,5 @@
+{
+    "compilerOptions": { //vai gerar um arquivo .js dentro da pasta dist
+        "outDir": "dist"
+    }
+}

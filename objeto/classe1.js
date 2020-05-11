@@ -4,7 +4,6 @@ class Lancamentos {
         this.valor = valor
     }
 }
-
 class Ciclofinancas {
     constructor(mes, ano) {
         this.mes = mes
