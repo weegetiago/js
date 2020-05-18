@@ -20,11 +20,10 @@ const listCidade = [
 ];
 listCidade.forEach(pId => {
     if (!filterByID.find(porID => porID.id === pId.id && porID.cidade === pId.cidade)) {
-        const { id, cidade} = pId;
-        let bairros = listCidade
-            .filter(pegaBairo => pegaBairo.cidade === cidade)
-            .map(res => res.bairro )
-        filterByID.push({ id, cidade, bairro: bairros  });
+        const { id, cidade } = pId;
+        filterByID.push({ id, cidade, bairro:listCidade
+            .filter(filtra => filtra.cidade === cidade)
+            .map(res =>  res.bairro )});
     }
 });
 console.log('Cidades agrupadas por ID', filterByID);
