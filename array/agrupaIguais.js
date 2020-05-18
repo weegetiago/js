@@ -1,27 +1,30 @@
 //Agrupa por registros iguais.
-
 const filterByID = [];
-const cidade = [
-    { id: 'SC', cidade: 'Timbó' },
-    { id: 'SC', cidade: 'Timbó' },
-    { id: 'SC', cidade: 'Timbó' },
-    { id: 'SC', cidade: 'Blumenau' },
+const listCidade = [
+    { id: 'SC', cidade: 'Timbó', bairro: "1 Timbó" },
+    { id: 'SC', cidade: 'Timbó', bairro: "1 Timbó" },
+    { id: 'SC', cidade: 'Timbó', bairro: "2 Timbó" },
+    { id: 'SC', cidade: 'Timbó', bairro: "3 Timbó" },
+    { id: 'SC', cidade: 'Blumenau', bairro: "1 Blumenau" },
 
-    { id: 'SP', cidade: 'São Paulo' },
-    { id: 'SP', cidade: 'São Paulo' },
-    { id: 'SP', cidade: 'Barretos' },
+    { id: 'SP', cidade: 'São Paulo', bairro: "1 São Paulo" },
+    { id: 'SP', cidade: 'São Paulo', bairro: "2 São Paulo" },
+    { id: 'SP', cidade: 'Barretos', bairro: "1 Barretos" },
 
-    { id: 'RS', cidade: 'Caxia Do Sul' },
+    { id: 'RS', cidade: 'Caxia Do Sul', bairro: "1 Caxia Do Sul" },
+    { id: 'RS', cidade: 'Caxia Do Sul', bairro: "1 Caxia Do Sul" },
+    { id: 'RS', cidade: 'Caxia Do Sul', bairro: "2 Caxia Do Sul" },
+    { id: 'RS', cidade: 'Santana do Livrametno', bairro: "SDL" },
 
-    { id: 'MG', cidade: 'Belo Horizonte' },
+    { id: 'MG', cidade: 'Belo Horizonte', bairro: "BH" },
 ];
-
-cidade.forEach(pId => {
-    if (!filterByID.find(porID => porID.id == pId.id && porID.cidade == pId.cidade)) {
-        const { id, cidade } = pId;
-        filterByID.push({ id, cidade,});
+listCidade.forEach(pId => {
+    if (!filterByID.find(porID => porID.id === pId.id && porID.cidade === pId.cidade)) {
+        const { id, cidade} = pId;
+        let bairros = listCidade
+            .filter(pegaBairo => pegaBairo.cidade === cidade)
+            .map(res => res.bairro )
+        filterByID.push({ id, cidade, bairro: bairros  });
     }
 });
-
-console.log('Cidades agrupadas por ID',filterByID);
-console.log('Cidades', cidade);
+console.log('Cidades agrupadas por ID', filterByID);
